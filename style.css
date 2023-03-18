@@ -2,6 +2,20 @@
  box-sizing: border-box;
  margin: 0;
  padding: 0;
+ font-family: 'Poppins', sans-serif;
+ color: #fff;
+
+}
+
+h2{
+
+}
+h6{
+
+}
+p{
+font-size: 10px;
+color: grey;
 }
 
 .container {
@@ -17,14 +31,48 @@
  grid-template-areas:
   "Box1 Box1 Box2 Box5"
   "Box3 Box4 Box4 Box5";
+  gap: 15px;
 }
 
+.Box{
+  border-radius: 20px;
 
+}
 .Box1 {
  grid-area: Box1;
- background-color: blue;
+ background: #733fc8;
+
+ padding: 20px 30px;
 }
 
+.img-container img{
+  border-radius: 50px;
+  border: solid 2px #fff;
+
+  
+}
+.container-box1 {
+  display: grid; 
+  align-items: center;
+  justify-content:center;
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "img-container text-stuff text-stuff ."
+    ". . . ."; 
+}
+.img-container { grid-area: img-container;
+display: flex;
+justify-content: center;
+}
+.text-stuff { grid-area: text-stuff; }
+
+
+h2{
+  font-size: 15px;
+  padding: 0px 5px;
+}
 .Box2 {
  grid-area: Box2;
  background-color: green;
@@ -43,4 +91,13 @@
 .Box5 {
  grid-area: Box5;
  background-color: orange;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
