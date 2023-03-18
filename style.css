@@ -27,16 +27,20 @@
 
 .Box2 {
  grid-area: Box2;
+ background-color: green;
 }
 
 .Box3 {
  grid-area: Box3;
+ background-color: yellow;
 }
 
 .Box4 {
  grid-area: Box4;
+ background-color: red;
 }
 
 .Box5 {
  grid-area: Box5;
+ background-color: orange;
 }
